@@ -1,4 +1,4 @@
-package xyz.ledyx.manipulate_headers.intercecptor;
+package xyz.ledyx.manipulate_headers.model;
 
 import lombok.Data;
 

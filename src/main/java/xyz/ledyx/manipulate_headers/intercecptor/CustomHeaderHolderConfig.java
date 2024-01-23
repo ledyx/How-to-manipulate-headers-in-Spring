@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.context.annotation.RequestScope;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import xyz.ledyx.manipulate_headers.model.CustomHeaderHolder;
 
 @Configuration
 public class CustomHeaderHolderConfig implements WebMvcConfigurer {

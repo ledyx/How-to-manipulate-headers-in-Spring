@@ -1,6 +1,6 @@
 package xyz.ledyx.manipulate_headers.controller;
 
-import xyz.ledyx.manipulate_headers.intercecptor.CustomHeaderHolder;
+import xyz.ledyx.manipulate_headers.model.CustomHeaderHolder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
