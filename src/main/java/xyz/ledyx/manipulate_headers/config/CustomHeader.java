@@ -1,4 +1,4 @@
-package com.example.springboot_playground.config;
+package xyz.ledyx.manipulate_headers.config;
 
 import lombok.Data;
 

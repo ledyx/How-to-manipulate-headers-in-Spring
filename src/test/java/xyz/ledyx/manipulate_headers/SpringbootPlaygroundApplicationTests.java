@@ -1,4 +1,4 @@
-package com.example.springboot_playground;
+package xyz.ledyx.manipulate_headers;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

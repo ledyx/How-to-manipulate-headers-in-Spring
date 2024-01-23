@@ -1,4 +1,4 @@
-package com.example.springboot_playground.intercecptor;
+package xyz.ledyx.manipulate_headers.intercecptor;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

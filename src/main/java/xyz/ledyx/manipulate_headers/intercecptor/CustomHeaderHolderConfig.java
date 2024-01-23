@@ -1,4 +1,4 @@
-package com.example.springboot_playground.intercecptor;
+package xyz.ledyx.manipulate_headers.intercecptor;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

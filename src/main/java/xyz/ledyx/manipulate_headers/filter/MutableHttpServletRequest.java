@@ -1,4 +1,4 @@
-package com.example.springboot_playground.filter;
+package xyz.ledyx.manipulate_headers.filter;
 
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.http.HttpServletRequest;

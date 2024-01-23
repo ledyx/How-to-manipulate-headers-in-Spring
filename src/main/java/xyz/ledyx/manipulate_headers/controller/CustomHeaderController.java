@@ -1,6 +1,6 @@
-package com.example.springboot_playground.controller;
+package xyz.ledyx.manipulate_headers.controller;
 
-import com.example.springboot_playground.intercecptor.CustomHeaderHolder;
+import xyz.ledyx.manipulate_headers.intercecptor.CustomHeaderHolder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +19,7 @@ import java.util.Map;
 public class CustomHeaderController {
     private final CustomHeaderHolder customHeaderHolder;
 
-    @GetMapping("/basic")
+    @GetMapping("/solution1")
     public ResponseEntity<Map<String, String>> respondCustomHeader1(@RequestHeader Map<String, String> headers) {
 
         assert StringUtils.hasText(headers.get("requestId"));
@@ -29,7 +29,7 @@ public class CustomHeaderController {
         return ResponseEntity.ok(headers);
     }
 
-    @GetMapping("/enhanced")
+    @GetMapping("/solution2")
     public ResponseEntity<CustomHeaderHolder> respondCustomHeader2() {
 
         assert StringUtils.hasText(customHeaderHolder.getRequestId());
