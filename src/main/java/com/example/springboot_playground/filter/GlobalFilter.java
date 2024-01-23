@@ -6,14 +6,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 
 @Slf4j
 @Component
 public class GlobalFilter implements Filter {
-    @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
-        Filter.super.init(filterConfig);
-    }
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
@@ -21,12 +18,9 @@ public class GlobalFilter implements Filter {
         HttpServletResponse httpServletResponse = (HttpServletResponse) response;
 
         // Custom header
-        mutableHttpServletRequest.putHeader("foo", "bar");
+        mutableHttpServletRequest.putHeader("requestId", "test-id");
+        mutableHttpServletRequest.putHeader("requestName", "test-name");
+        mutableHttpServletRequest.putHeader("requestDate", LocalDateTime.now().toString());
         chain.doFilter(mutableHttpServletRequest, httpServletResponse);
-    }
-
-    @Override
-    public void destroy() {
-        Filter.super.destroy();
     }
 }
