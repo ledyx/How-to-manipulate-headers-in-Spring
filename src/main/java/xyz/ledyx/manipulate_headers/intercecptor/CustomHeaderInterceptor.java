@@ -14,9 +14,9 @@ public class CustomHeaderInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
-        customHeaderHolder.setRequestId(request.getHeader("requestId"));
-        customHeaderHolder.setRequestName(request.getHeader("requestName"));
-        customHeaderHolder.setRequestDate(LocalDateTime.parse(request.getHeader("requestDate")));
+        customHeaderHolder.setRequestId(request.getHeader("request-id"));
+        customHeaderHolder.setRequestName(request.getHeader("request-name"));
+        customHeaderHolder.setRequestDate(LocalDateTime.parse(request.getHeader("request-date")));
         return true;
     }
 }
